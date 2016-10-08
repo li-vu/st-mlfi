@@ -1,0 +1,1338 @@
+"otc_unit_test_insts.mf" 19 455 461 "otc_unit_test_insts.mf" 19 455 466
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+ident(
+  def ipmap "otc_unit_test_insts.mf" 25 586 588 "otc_unit_test_insts.mf" 49 1186 1189
+)
+"otc_unit_test_insts.mf" 21 497 503 "otc_unit_test_insts.mf" 21 497 508
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 21 497 522 "otc_unit_test_insts.mf" 21 497 536
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_src_int_a "otc_insts_lib_itempointer.mf" 3310 346401 346409 "otc_insts_lib_itempointer.mf" 3310 346401 346423
+)
+"otc_unit_test_insts.mf" 21 497 503 "otc_unit_test_insts.mf" 21 497 536
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 22 538 544 "otc_unit_test_insts.mf" 22 538 549
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 22 538 563 "otc_unit_test_insts.mf" 22 538 577
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_tgt_int_a "otc_insts_lib_itempointer.mf" 3312 346563 346571 "otc_insts_lib_itempointer.mf" 3312 346563 346585
+)
+"otc_unit_test_insts.mf" 22 538 544 "otc_unit_test_insts.mf" 22 538 577
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 21 497 501 "otc_unit_test_insts.mf" 23 579 584
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+"otc_unit_test_insts.mf" 25 586 592 "otc_unit_test_insts.mf" 25 586 597
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def rules "otc_unit_test_insts.mf" 43 1063 1065 "otc_unit_test_insts.mf" 49 1186 1189
+)
+"otc_unit_test_insts.mf" 26 600 608 "otc_unit_test_insts.mf" 26 600 618
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def combinator "otc_unit_test_insts.mf" 39 1021 1025 "otc_unit_test_insts.mf" 41 1054 1061
+)
+"otc_unit_test_insts.mf" 28 647 653 "otc_unit_test_insts.mf" 28 647 661
+type(
+  callsite:StackTrace.call_site ->
+  ta:int ttype ->
+  tb:int ttype ->
+  ts:int ttype ->
+  t1:int ttype ->
+  ?restore:(int ->
+            (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action) ->
+  ?data:(int -> (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action) ->
+  ?enabled:(int ->
+            (int, bool) Otc_insts_lib_rules.LibRules.Actions.enable_action) ->
+  ?readonly:(int ->
+             (int, bool) Otc_insts_lib_rules.LibRules.Actions.readonly_action) ->
+  ?restrict:(int ->
+             (int, int list)
+             Otc_insts_lib_rules.LibRules.Actions.restrict_action) ->
+  ?unblockable:unit ->
+  ?no_virts:unit ->
+  trigger:(t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t ->
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states ->
+  (t, int) Mlfi_type_path.field -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Otc_insts_lib_rules.LibRules.Actions.actions1 "otc_insts_lib_rules.mfi" 792 28902 28906 "otc_insts_lib_rules.mfi" 805 29635 29676
+)
+"otc_unit_test_insts.mf" 31 695 707 "otc_unit_test_insts.mf" 31 695 710
+type(
+  int
+)
+ident(
+  def src "otc_unit_test_insts.mf" 31 695 716 "otc_unit_test_insts.mf" 31 695 737
+)
+"otc_unit_test_insts.mf" 31 695 716 "otc_unit_test_insts.mf" 31 695 719
+type(
+  int
+)
+ident(
+  int_ref src "otc_unit_test_insts.mf" 31 695 707 "otc_unit_test_insts.mf" 31 695 710
+)
+"otc_unit_test_insts.mf" 31 695 720 "otc_unit_test_insts.mf" 31 695 722
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"otc_unit_test_insts.mf" 31 695 723 "otc_unit_test_insts.mf" 31 695 724
+type(
+  int
+)
+"otc_unit_test_insts.mf" 31 695 716 "otc_unit_test_insts.mf" 31 695 724
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 31 695 728 "otc_unit_test_insts.mf" 31 695 737
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action
+)
+"otc_unit_test_insts.mf" 32 738 750 "otc_unit_test_insts.mf" 32 738 753
+type(
+  int
+)
+ident(
+  def src "otc_unit_test_insts.mf" 32 738 759 "otc_unit_test_insts.mf" 32 738 794
+)
+"otc_unit_test_insts.mf" 32 738 759 "otc_unit_test_insts.mf" 32 738 760
+type(
+  int
+)
+"otc_unit_test_insts.mf" 32 738 761 "otc_unit_test_insts.mf" 32 738 762
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"otc_unit_test_insts.mf" 32 738 763 "otc_unit_test_insts.mf" 32 738 766
+type(
+  int
+)
+ident(
+  int_ref src "otc_unit_test_insts.mf" 32 738 750 "otc_unit_test_insts.mf" 32 738 753
+)
+"otc_unit_test_insts.mf" 32 738 759 "otc_unit_test_insts.mf" 32 738 766
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 32 738 767 "otc_unit_test_insts.mf" 32 738 769
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"otc_unit_test_insts.mf" 32 738 770 "otc_unit_test_insts.mf" 32 738 773
+type(
+  int
+)
+ident(
+  int_ref src "otc_unit_test_insts.mf" 32 738 750 "otc_unit_test_insts.mf" 32 738 753
+)
+"otc_unit_test_insts.mf" 32 738 774 "otc_unit_test_insts.mf" 32 738 776
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"otc_unit_test_insts.mf" 32 738 777 "otc_unit_test_insts.mf" 32 738 779
+type(
+  int
+)
+"otc_unit_test_insts.mf" 32 738 770 "otc_unit_test_insts.mf" 32 738 779
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 32 738 759 "otc_unit_test_insts.mf" 32 738 779
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 32 738 793 "otc_unit_test_insts.mf" 32 738 794
+type(
+  int
+)
+"otc_unit_test_insts.mf" 32 738 783 "otc_unit_test_insts.mf" 32 738 794
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action
+)
+"otc_unit_test_insts.mf" 33 795 807 "otc_unit_test_insts.mf" 33 795 808
+type(
+  int
+)
+"otc_unit_test_insts.mf" 33 795 834 "otc_unit_test_insts.mf" 33 795 837
+type(
+  int
+)
+ident(
+  def src "otc_unit_test_insts.mf" 33 795 841 "otc_unit_test_insts.mf" 33 795 848
+)
+"otc_unit_test_insts.mf" 33 795 841 "otc_unit_test_insts.mf" 33 795 844
+type(
+  int
+)
+ident(
+  int_ref src "otc_unit_test_insts.mf" 33 795 834 "otc_unit_test_insts.mf" 33 795 837
+)
+"otc_unit_test_insts.mf" 33 795 845 "otc_unit_test_insts.mf" 33 795 846
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"otc_unit_test_insts.mf" 33 795 847 "otc_unit_test_insts.mf" 33 795 848
+type(
+  int
+)
+"otc_unit_test_insts.mf" 33 795 841 "otc_unit_test_insts.mf" 33 795 848
+type(
+  int
+)
+"otc_unit_test_insts.mf" 33 795 829 "otc_unit_test_insts.mf" 33 795 849
+type(
+  int -> int
+)
+"otc_unit_test_insts.mf" 33 795 812 "otc_unit_test_insts.mf" 33 795 849
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action
+)
+"otc_unit_test_insts.mf" 30 677 685 "otc_unit_test_insts.mf" 33 795 850
+type(
+  int -> (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action
+)
+"otc_unit_test_insts.mf" 34 851 874 "otc_unit_test_insts.mf" 34 851 877
+type(
+  int
+)
+ident(
+  def src "otc_unit_test_insts.mf" 34 851 881 "otc_unit_test_insts.mf" 34 851 900
+)
+"otc_unit_test_insts.mf" 34 851 889 "otc_unit_test_insts.mf" 34 851 892
+type(
+  int
+)
+ident(
+  int_ref src "otc_unit_test_insts.mf" 34 851 874 "otc_unit_test_insts.mf" 34 851 877
+)
+"otc_unit_test_insts.mf" 34 851 893 "otc_unit_test_insts.mf" 34 851 895
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"otc_unit_test_insts.mf" 34 851 896 "otc_unit_test_insts.mf" 34 851 899
+type(
+  int
+)
+"otc_unit_test_insts.mf" 34 851 888 "otc_unit_test_insts.mf" 34 851 900
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 34 851 881 "otc_unit_test_insts.mf" 34 851 900
+type(
+  (int, bool) Otc_insts_lib_rules.LibRules.Actions.enable_action
+)
+"otc_unit_test_insts.mf" 34 851 869 "otc_unit_test_insts.mf" 34 851 901
+type(
+  int -> (int, bool) Otc_insts_lib_rules.LibRules.Actions.enable_action
+)
+"otc_unit_test_insts.mf" 35 902 921 "otc_unit_test_insts.mf" 35 902 926
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 35 902 921 "otc_unit_test_insts.mf" 35 902 938
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 35 902 940 "otc_unit_test_insts.mf" 35 902 951
+type(
+  (t, int) Dynamic_gui.Fields.t -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.non_trigger "dynamic_gui_signatures.mf" 63 2801 2803 "dynamic_gui_signatures.mf" 63 2801 2841
+)
+"otc_unit_test_insts.mf" 35 902 953 "otc_unit_test_insts.mf" 35 902 958
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 35 902 952 "otc_unit_test_insts.mf" 35 902 971
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 35 902 940 "otc_unit_test_insts.mf" 35 902 971
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 35 902 920 "otc_unit_test_insts.mf" 35 902 972
+type(
+  (t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 36 973 989 "otc_unit_test_insts.mf" 36 973 991
+type(
+  int -> int
+)
+ident(
+  int_ref Sc_util.id "sc_util.mfi" 21 620 620 "sc_util.mfi" 21 620 637
+)
+"otc_unit_test_insts.mf" 36 973 981 "otc_unit_test_insts.mf" 36 973 992
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states
+)
+"otc_unit_test_insts.mf" 28 647 653 "otc_unit_test_insts.mf" 37 993 1013
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 39 1021 1025 "otc_unit_test_insts.mf" 39 1021 1033
+type(
+  t Dynamic_gui.Rule.t list -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Dynamic_gui.Rule.all "dynamic_gui_signatures.mf" 253 30954 30956 "dynamic_gui_signatures.mf" 253 30954 30989
+)
+"otc_unit_test_insts.mf" 40 1034 1042 "otc_unit_test_insts.mf" 40 1034 1052
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref combinator "otc_unit_test_insts.mf" 26 600 608 "otc_unit_test_insts.mf" 26 600 618
+)
+"otc_unit_test_insts.mf" 40 1034 1040 "otc_unit_test_insts.mf" 41 1054 1061
+type(
+  t Dynamic_gui.Rule.t list
+)
+"otc_unit_test_insts.mf" 39 1021 1025 "otc_unit_test_insts.mf" 41 1054 1061
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 26 600 604 "otc_unit_test_insts.mf" 41 1054 1061
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 43 1063 1069 "otc_unit_test_insts.mf" 43 1063 1071
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 43 1063 1074 "otc_unit_test_insts.mf" 43 1063 1087
+type(
+  name:string ->
+  t:t ttype ->
+  ?rules:t Dynamic_gui.Rule.t ->
+  ?type_rules:t Dynamic_gui.Type_rule.t list ->
+  ?scdmap:(Dynamic_gui.status -> t Dynamic_gui.ScdMap.MapSpec.row list) ->
+  ?layout:t Dynamic_gui.Layout.t ->
+  ?ipmap:t Dynamic_gui.ItemPointer.ip_map -> unit -> unit
+)
+ident(
+  int_ref Dynamic_gui.demo_register "dynamic_gui.mfi" 238 8683 8683 "dynamic_gui.mfi" 246 8967 8997
+)
+"otc_unit_test_insts.mf" 44 1088 1101 "otc_unit_test_insts.mf" 44 1088 1127
+type(
+  string
+)
+"otc_unit_test_insts.mf" 45 1128 1137 "otc_unit_test_insts.mf" 45 1128 1150
+type(
+  t ttype
+)
+type(
+  t -> t ttype
+)
+ident(
+  ext_ref Mlfi_types.internal_ttype_of
+)
+"otc_unit_test_insts.mf" 46 1151 1158 "otc_unit_test_insts.mf" 46 1151 1163
+type(
+  t Dynamic_gui.ItemPointer.ip_map
+)
+ident(
+  int_ref ipmap "otc_unit_test_insts.mf" 19 455 461 "otc_unit_test_insts.mf" 19 455 466
+)
+"otc_unit_test_insts.mf" 47 1164 1171 "otc_unit_test_insts.mf" 47 1164 1176
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref rules "otc_unit_test_insts.mf" 25 586 592 "otc_unit_test_insts.mf" 25 586 597
+)
+"otc_unit_test_insts.mf" 48 1177 1183 "otc_unit_test_insts.mf" 48 1177 1185
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 43 1063 1074 "otc_unit_test_insts.mf" 48 1177 1185
+call(
+  stack
+)
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 61 1356 1362 "otc_unit_test_insts.mf" 61 1356 1367
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+ident(
+  def ipmap "otc_unit_test_insts.mf" 68 1534 1536 "otc_unit_test_insts.mf" 92 2140 2143
+)
+"otc_unit_test_insts.mf" 63 1398 1404 "otc_unit_test_insts.mf" 63 1398 1409
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 63 1398 1425 "otc_unit_test_insts.mf" 63 1398 1439
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_src_int_a "otc_insts_lib_itempointer.mf" 3310 346401 346409 "otc_insts_lib_itempointer.mf" 3310 346401 346423
+)
+"otc_unit_test_insts.mf" 63 1398 1404 "otc_unit_test_insts.mf" 63 1398 1439
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 64 1441 1447 "otc_unit_test_insts.mf" 64 1441 1452
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 64 1441 1468 "otc_unit_test_insts.mf" 64 1441 1482
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_src_int_b "otc_insts_lib_itempointer.mf" 3311 346482 346490 "otc_insts_lib_itempointer.mf" 3311 346482 346504
+)
+"otc_unit_test_insts.mf" 64 1441 1447 "otc_unit_test_insts.mf" 64 1441 1482
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 65 1484 1490 "otc_unit_test_insts.mf" 65 1484 1495
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 65 1484 1511 "otc_unit_test_insts.mf" 65 1484 1525
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_tgt_int_a "otc_insts_lib_itempointer.mf" 3312 346563 346571 "otc_insts_lib_itempointer.mf" 3312 346563 346585
+)
+"otc_unit_test_insts.mf" 65 1484 1490 "otc_unit_test_insts.mf" 65 1484 1525
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 63 1398 1402 "otc_unit_test_insts.mf" 66 1527 1532
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+"otc_unit_test_insts.mf" 68 1534 1540 "otc_unit_test_insts.mf" 68 1534 1545
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def rules "otc_unit_test_insts.mf" 86 2014 2016 "otc_unit_test_insts.mf" 92 2140 2143
+)
+"otc_unit_test_insts.mf" 69 1548 1556 "otc_unit_test_insts.mf" 69 1548 1566
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def combinator "otc_unit_test_insts.mf" 82 1972 1976 "otc_unit_test_insts.mf" 84 2005 2012
+)
+"otc_unit_test_insts.mf" 71 1595 1601 "otc_unit_test_insts.mf" 71 1595 1609
+type(
+  callsite:StackTrace.call_site ->
+  ta:int ttype ->
+  tb:int ttype ->
+  ts:int ttype ->
+  t1:int ttype ->
+  ?restore:(int ->
+            (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action) ->
+  ?data:(int -> (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action) ->
+  ?enabled:(int ->
+            (int, bool) Otc_insts_lib_rules.LibRules.Actions.enable_action) ->
+  ?readonly:(int ->
+             (int, bool) Otc_insts_lib_rules.LibRules.Actions.readonly_action) ->
+  ?restrict:(int ->
+             (int, int list)
+             Otc_insts_lib_rules.LibRules.Actions.restrict_action) ->
+  ?unblockable:unit ->
+  ?no_virts:unit ->
+  trigger:(t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t ->
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states ->
+  (t, int) Mlfi_type_path.field -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Otc_insts_lib_rules.LibRules.Actions.actions1 "otc_insts_lib_rules.mfi" 792 28902 28906 "otc_insts_lib_rules.mfi" 805 29635 29676
+)
+"otc_unit_test_insts.mf" 74 1646 1658 "otc_unit_test_insts.mf" 74 1646 1663
+type(
+  int
+)
+ident(
+  def src_a "otc_unit_test_insts.mf" 74 1646 1669 "otc_unit_test_insts.mf" 74 1646 1697
+)
+"otc_unit_test_insts.mf" 74 1646 1669 "otc_unit_test_insts.mf" 74 1646 1674
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 74 1646 1658 "otc_unit_test_insts.mf" 74 1646 1663
+)
+"otc_unit_test_insts.mf" 74 1646 1675 "otc_unit_test_insts.mf" 74 1646 1678
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"otc_unit_test_insts.mf" 74 1646 1679 "otc_unit_test_insts.mf" 74 1646 1680
+type(
+  int
+)
+"otc_unit_test_insts.mf" 74 1646 1669 "otc_unit_test_insts.mf" 74 1646 1680
+type(
+  int
+)
+"otc_unit_test_insts.mf" 74 1646 1681 "otc_unit_test_insts.mf" 74 1646 1682
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"otc_unit_test_insts.mf" 74 1646 1683 "otc_unit_test_insts.mf" 74 1646 1684
+type(
+  int
+)
+"otc_unit_test_insts.mf" 74 1646 1669 "otc_unit_test_insts.mf" 74 1646 1684
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 74 1646 1688 "otc_unit_test_insts.mf" 74 1646 1697
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action
+)
+"otc_unit_test_insts.mf" 75 1698 1710 "otc_unit_test_insts.mf" 75 1698 1715
+type(
+  int
+)
+ident(
+  def src_a "otc_unit_test_insts.mf" 75 1698 1721 "otc_unit_test_insts.mf" 75 1698 1747
+)
+"otc_unit_test_insts.mf" 75 1698 1721 "otc_unit_test_insts.mf" 75 1698 1726
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 75 1698 1710 "otc_unit_test_insts.mf" 75 1698 1715
+)
+"otc_unit_test_insts.mf" 75 1698 1727 "otc_unit_test_insts.mf" 75 1698 1730
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"otc_unit_test_insts.mf" 75 1698 1731 "otc_unit_test_insts.mf" 75 1698 1732
+type(
+  int
+)
+"otc_unit_test_insts.mf" 75 1698 1721 "otc_unit_test_insts.mf" 75 1698 1732
+type(
+  int
+)
+"otc_unit_test_insts.mf" 75 1698 1733 "otc_unit_test_insts.mf" 75 1698 1734
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"otc_unit_test_insts.mf" 75 1698 1735 "otc_unit_test_insts.mf" 75 1698 1736
+type(
+  int
+)
+"otc_unit_test_insts.mf" 75 1698 1721 "otc_unit_test_insts.mf" 75 1698 1736
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 75 1698 1740 "otc_unit_test_insts.mf" 75 1698 1747
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action
+)
+"otc_unit_test_insts.mf" 76 1748 1760 "otc_unit_test_insts.mf" 76 1748 1761
+type(
+  int
+)
+"otc_unit_test_insts.mf" 76 1748 1785 "otc_unit_test_insts.mf" 76 1748 1790
+type(
+  int
+)
+ident(
+  def src_b "otc_unit_test_insts.mf" 76 1748 1791 "otc_unit_test_insts.mf" 76 1748 1805
+)
+"otc_unit_test_insts.mf" 76 1748 1791 "otc_unit_test_insts.mf" 76 1748 1792
+type(
+  int
+)
+"otc_unit_test_insts.mf" 76 1748 1796 "otc_unit_test_insts.mf" 76 1748 1801
+type(
+  int
+)
+ident(
+  int_ref src_b "otc_unit_test_insts.mf" 76 1748 1785 "otc_unit_test_insts.mf" 76 1748 1790
+)
+"otc_unit_test_insts.mf" 76 1748 1802 "otc_unit_test_insts.mf" 76 1748 1803
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"otc_unit_test_insts.mf" 76 1748 1804 "otc_unit_test_insts.mf" 76 1748 1805
+type(
+  int
+)
+"otc_unit_test_insts.mf" 76 1748 1796 "otc_unit_test_insts.mf" 76 1748 1805
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 76 1748 1780 "otc_unit_test_insts.mf" 76 1748 1806
+type(
+  int -> int -> bool
+)
+"otc_unit_test_insts.mf" 76 1748 1765 "otc_unit_test_insts.mf" 76 1748 1806
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action
+)
+"otc_unit_test_insts.mf" 73 1628 1636 "otc_unit_test_insts.mf" 76 1748 1807
+type(
+  int -> (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action
+)
+"otc_unit_test_insts.mf" 77 1808 1832 "otc_unit_test_insts.mf" 77 1808 1837
+type(
+  int
+)
+ident(
+  def src_a "otc_unit_test_insts.mf" 77 1808 1841 "otc_unit_test_insts.mf" 77 1808 1861
+)
+"otc_unit_test_insts.mf" 77 1808 1851 "otc_unit_test_insts.mf" 77 1808 1856
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 77 1808 1832 "otc_unit_test_insts.mf" 77 1808 1837
+)
+"otc_unit_test_insts.mf" 77 1808 1857 "otc_unit_test_insts.mf" 77 1808 1858
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"otc_unit_test_insts.mf" 77 1808 1859 "otc_unit_test_insts.mf" 77 1808 1860
+type(
+  int
+)
+"otc_unit_test_insts.mf" 77 1808 1850 "otc_unit_test_insts.mf" 77 1808 1861
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 77 1808 1841 "otc_unit_test_insts.mf" 77 1808 1861
+type(
+  (int, bool) Otc_insts_lib_rules.LibRules.Actions.readonly_action
+)
+"otc_unit_test_insts.mf" 77 1808 1827 "otc_unit_test_insts.mf" 77 1808 1862
+type(
+  int -> (int, bool) Otc_insts_lib_rules.LibRules.Actions.readonly_action
+)
+"otc_unit_test_insts.mf" 78 1863 1882 "otc_unit_test_insts.mf" 78 1863 1887
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 78 1863 1882 "otc_unit_test_insts.mf" 78 1863 1901
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 78 1863 1903 "otc_unit_test_insts.mf" 78 1863 1908
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 78 1863 1903 "otc_unit_test_insts.mf" 78 1863 1922
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 78 1863 1881 "otc_unit_test_insts.mf" 78 1863 1923
+type(
+  (t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 79 1924 1940 "otc_unit_test_insts.mf" 79 1924 1942
+type(
+  int -> int
+)
+ident(
+  int_ref Sc_util.id "sc_util.mfi" 21 620 620 "sc_util.mfi" 21 620 637
+)
+"otc_unit_test_insts.mf" 79 1924 1932 "otc_unit_test_insts.mf" 79 1924 1943
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states
+)
+"otc_unit_test_insts.mf" 71 1595 1601 "otc_unit_test_insts.mf" 80 1944 1964
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 82 1972 1976 "otc_unit_test_insts.mf" 82 1972 1984
+type(
+  t Dynamic_gui.Rule.t list -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Dynamic_gui.Rule.all "dynamic_gui_signatures.mf" 253 30954 30956 "dynamic_gui_signatures.mf" 253 30954 30989
+)
+"otc_unit_test_insts.mf" 83 1985 1993 "otc_unit_test_insts.mf" 83 1985 2003
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref combinator "otc_unit_test_insts.mf" 69 1548 1556 "otc_unit_test_insts.mf" 69 1548 1566
+)
+"otc_unit_test_insts.mf" 83 1985 1991 "otc_unit_test_insts.mf" 84 2005 2012
+type(
+  t Dynamic_gui.Rule.t list
+)
+"otc_unit_test_insts.mf" 82 1972 1976 "otc_unit_test_insts.mf" 84 2005 2012
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 69 1548 1552 "otc_unit_test_insts.mf" 84 2005 2012
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 86 2014 2020 "otc_unit_test_insts.mf" 86 2014 2022
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 86 2014 2025 "otc_unit_test_insts.mf" 86 2014 2038
+type(
+  name:string ->
+  t:t ttype ->
+  ?rules:t Dynamic_gui.Rule.t ->
+  ?type_rules:t Dynamic_gui.Type_rule.t list ->
+  ?scdmap:(Dynamic_gui.status -> t Dynamic_gui.ScdMap.MapSpec.row list) ->
+  ?layout:t Dynamic_gui.Layout.t ->
+  ?ipmap:t Dynamic_gui.ItemPointer.ip_map -> unit -> unit
+)
+ident(
+  int_ref Dynamic_gui.demo_register "dynamic_gui.mfi" 238 8683 8683 "dynamic_gui.mfi" 246 8967 8997
+)
+"otc_unit_test_insts.mf" 87 2039 2052 "otc_unit_test_insts.mf" 87 2039 2081
+type(
+  string
+)
+"otc_unit_test_insts.mf" 88 2082 2091 "otc_unit_test_insts.mf" 88 2082 2104
+type(
+  t ttype
+)
+type(
+  t -> t ttype
+)
+ident(
+  ext_ref Mlfi_types.internal_ttype_of
+)
+"otc_unit_test_insts.mf" 89 2105 2112 "otc_unit_test_insts.mf" 89 2105 2117
+type(
+  t Dynamic_gui.ItemPointer.ip_map
+)
+ident(
+  int_ref ipmap "otc_unit_test_insts.mf" 61 1356 1362 "otc_unit_test_insts.mf" 61 1356 1367
+)
+"otc_unit_test_insts.mf" 90 2118 2125 "otc_unit_test_insts.mf" 90 2118 2130
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref rules "otc_unit_test_insts.mf" 68 1534 1540 "otc_unit_test_insts.mf" 68 1534 1545
+)
+"otc_unit_test_insts.mf" 91 2131 2137 "otc_unit_test_insts.mf" 91 2131 2139
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 86 2014 2025 "otc_unit_test_insts.mf" 91 2131 2139
+call(
+  stack
+)
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 104 2311 2317 "otc_unit_test_insts.mf" 104 2311 2322
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+ident(
+  def ipmap "otc_unit_test_insts.mf" 111 2489 2491 "otc_unit_test_insts.mf" 134 3085 3088
+)
+"otc_unit_test_insts.mf" 106 2353 2359 "otc_unit_test_insts.mf" 106 2353 2364
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 106 2353 2380 "otc_unit_test_insts.mf" 106 2353 2394
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_src_int_a "otc_insts_lib_itempointer.mf" 3310 346401 346409 "otc_insts_lib_itempointer.mf" 3310 346401 346423
+)
+"otc_unit_test_insts.mf" 106 2353 2359 "otc_unit_test_insts.mf" 106 2353 2394
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 107 2396 2402 "otc_unit_test_insts.mf" 107 2396 2407
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 107 2396 2423 "otc_unit_test_insts.mf" 107 2396 2437
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_src_int_b "otc_insts_lib_itempointer.mf" 3311 346482 346490 "otc_insts_lib_itempointer.mf" 3311 346482 346504
+)
+"otc_unit_test_insts.mf" 107 2396 2402 "otc_unit_test_insts.mf" 107 2396 2437
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 108 2439 2445 "otc_unit_test_insts.mf" 108 2439 2450
+type(
+  (t, int) Mlfi_type_path.field ->
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer ->
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+ident(
+  int_ref Dynamic_gui.ItemPointer.field "dynamic_gui_item_pointer.mf" 15 333 335 "dynamic_gui_item_pointer.mf" 15 333 417
+)
+"otc_unit_test_insts.mf" 108 2439 2466 "otc_unit_test_insts.mf" 108 2439 2480
+type(
+  int Dynamic_gui.ItemPointer.field_k Dynamic_gui.ItemPointer.item_pointer
+)
+ident(
+  int_ref Otc_insts_lib_itempointer.LibItemPointers.TestItempointers.test_tgt_int_a "otc_insts_lib_itempointer.mf" 3312 346563 346571 "otc_insts_lib_itempointer.mf" 3312 346563 346585
+)
+"otc_unit_test_insts.mf" 108 2439 2445 "otc_unit_test_insts.mf" 108 2439 2480
+call(
+  stack
+)
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item
+)
+"otc_unit_test_insts.mf" 106 2353 2357 "otc_unit_test_insts.mf" 109 2482 2487
+type(
+  t Dynamic_gui.ItemPointer.ip_map_item list
+)
+"otc_unit_test_insts.mf" 111 2489 2495 "otc_unit_test_insts.mf" 111 2489 2500
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def rules "otc_unit_test_insts.mf" 128 2958 2960 "otc_unit_test_insts.mf" 134 3085 3088
+)
+"otc_unit_test_insts.mf" 112 2503 2511 "otc_unit_test_insts.mf" 112 2503 2521
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  def combinator "otc_unit_test_insts.mf" 124 2916 2920 "otc_unit_test_insts.mf" 126 2949 2956
+)
+"otc_unit_test_insts.mf" 114 2550 2556 "otc_unit_test_insts.mf" 114 2550 2564
+type(
+  callsite:StackTrace.call_site ->
+  ta:int ttype ->
+  tb:int ttype ->
+  ts:int ttype ->
+  t1:int ttype ->
+  ?restore:(int ->
+            (int, int) Otc_insts_lib_rules.LibRules.Actions.restore_action) ->
+  ?data:(int -> (int, int) Otc_insts_lib_rules.LibRules.Actions.data_action) ->
+  ?enabled:(int ->
+            (int, bool) Otc_insts_lib_rules.LibRules.Actions.enable_action) ->
+  ?readonly:(int ->
+             (int, bool) Otc_insts_lib_rules.LibRules.Actions.readonly_action) ->
+  ?restrict:(int ->
+             (int, int list)
+             Otc_insts_lib_rules.LibRules.Actions.restrict_action) ->
+  ?unblockable:unit ->
+  ?no_virts:unit ->
+  trigger:(t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t ->
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states ->
+  (t, int) Mlfi_type_path.field -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Otc_insts_lib_rules.LibRules.Actions.actions1 "otc_insts_lib_rules.mfi" 792 28902 28906 "otc_insts_lib_rules.mfi" 805 29635 29676
+)
+"otc_unit_test_insts.mf" 117 2602 2614 "otc_unit_test_insts.mf" 117 2602 2619
+type(
+  int
+)
+ident(
+  def src_a "otc_unit_test_insts.mf" 117 2602 2625 "otc_unit_test_insts.mf" 117 2602 2665
+)
+"otc_unit_test_insts.mf" 117 2602 2625 "otc_unit_test_insts.mf" 117 2602 2626
+type(
+  int
+)
+"otc_unit_test_insts.mf" 117 2602 2627 "otc_unit_test_insts.mf" 117 2602 2629
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"otc_unit_test_insts.mf" 117 2602 2630 "otc_unit_test_insts.mf" 117 2602 2635
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 117 2602 2614 "otc_unit_test_insts.mf" 117 2602 2619
+)
+"otc_unit_test_insts.mf" 117 2602 2625 "otc_unit_test_insts.mf" 117 2602 2635
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 117 2602 2636 "otc_unit_test_insts.mf" 117 2602 2638
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"otc_unit_test_insts.mf" 117 2602 2639 "otc_unit_test_insts.mf" 117 2602 2644
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 117 2602 2614 "otc_unit_test_insts.mf" 117 2602 2619
+)
+"otc_unit_test_insts.mf" 117 2602 2645 "otc_unit_test_insts.mf" 117 2602 2646
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"otc_unit_test_insts.mf" 117 2602 2647 "otc_unit_test_insts.mf" 117 2602 2649
+type(
+  int
+)
+"otc_unit_test_insts.mf" 117 2602 2639 "otc_unit_test_insts.mf" 117 2602 2649
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 117 2602 2625 "otc_unit_test_insts.mf" 117 2602 2649
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 117 2602 2653 "otc_unit_test_insts.mf" 117 2602 2665
+type(
+  (int, int list) Otc_insts_lib_rules.LibRules.Actions.restrict_action
+)
+"otc_unit_test_insts.mf" 118 2666 2678 "otc_unit_test_insts.mf" 118 2666 2683
+type(
+  int
+)
+ident(
+  def src_a "otc_unit_test_insts.mf" 118 2666 2689 "otc_unit_test_insts.mf" 118 2666 2735
+)
+"otc_unit_test_insts.mf" 118 2666 2689 "otc_unit_test_insts.mf" 118 2666 2694
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 118 2666 2678 "otc_unit_test_insts.mf" 118 2666 2683
+)
+"otc_unit_test_insts.mf" 118 2666 2695 "otc_unit_test_insts.mf" 118 2666 2697
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"otc_unit_test_insts.mf" 118 2666 2698 "otc_unit_test_insts.mf" 118 2666 2700
+type(
+  int
+)
+"otc_unit_test_insts.mf" 118 2666 2689 "otc_unit_test_insts.mf" 118 2666 2700
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 118 2666 2701 "otc_unit_test_insts.mf" 118 2666 2703
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"otc_unit_test_insts.mf" 118 2666 2704 "otc_unit_test_insts.mf" 118 2666 2709
+type(
+  int
+)
+ident(
+  int_ref src_a "otc_unit_test_insts.mf" 118 2666 2678 "otc_unit_test_insts.mf" 118 2666 2683
+)
+"otc_unit_test_insts.mf" 118 2666 2710 "otc_unit_test_insts.mf" 118 2666 2711
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"otc_unit_test_insts.mf" 118 2666 2712 "otc_unit_test_insts.mf" 118 2666 2714
+type(
+  int
+)
+"otc_unit_test_insts.mf" 118 2666 2704 "otc_unit_test_insts.mf" 118 2666 2714
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 118 2666 2689 "otc_unit_test_insts.mf" 118 2666 2714
+type(
+  bool
+)
+"otc_unit_test_insts.mf" 118 2666 2729 "otc_unit_test_insts.mf" 118 2666 2730
+type(
+  int
+)
+"otc_unit_test_insts.mf" 118 2666 2732 "otc_unit_test_insts.mf" 118 2666 2733
+type(
+  int
+)
+"otc_unit_test_insts.mf" 118 2666 2727 "otc_unit_test_insts.mf" 118 2666 2735
+type(
+  int list
+)
+"otc_unit_test_insts.mf" 118 2666 2718 "otc_unit_test_insts.mf" 118 2666 2735
+type(
+  (int, int list) Otc_insts_lib_rules.LibRules.Actions.restrict_action
+)
+"otc_unit_test_insts.mf" 119 2736 2748 "otc_unit_test_insts.mf" 119 2736 2749
+type(
+  int
+)
+"otc_unit_test_insts.mf" 119 2736 2774 "otc_unit_test_insts.mf" 119 2736 2779
+type(
+  int
+)
+ident(
+  def src_b "otc_unit_test_insts.mf" 119 2736 2783 "otc_unit_test_insts.mf" 119 2736 2805
+)
+"otc_unit_test_insts.mf" 119 2736 2784 "otc_unit_test_insts.mf" 119 2736 2789
+type(
+  int
+)
+ident(
+  int_ref src_b "otc_unit_test_insts.mf" 119 2736 2774 "otc_unit_test_insts.mf" 119 2736 2779
+)
+"otc_unit_test_insts.mf" 119 2736 2790 "otc_unit_test_insts.mf" 119 2736 2791
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"otc_unit_test_insts.mf" 119 2736 2792 "otc_unit_test_insts.mf" 119 2736 2793
+type(
+  int
+)
+"otc_unit_test_insts.mf" 119 2736 2784 "otc_unit_test_insts.mf" 119 2736 2793
+type(
+  int
+)
+"otc_unit_test_insts.mf" 119 2736 2795 "otc_unit_test_insts.mf" 119 2736 2800
+type(
+  int
+)
+ident(
+  int_ref src_b "otc_unit_test_insts.mf" 119 2736 2774 "otc_unit_test_insts.mf" 119 2736 2779
+)
+"otc_unit_test_insts.mf" 119 2736 2801 "otc_unit_test_insts.mf" 119 2736 2802
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"otc_unit_test_insts.mf" 119 2736 2803 "otc_unit_test_insts.mf" 119 2736 2804
+type(
+  int
+)
+"otc_unit_test_insts.mf" 119 2736 2795 "otc_unit_test_insts.mf" 119 2736 2804
+type(
+  int
+)
+"otc_unit_test_insts.mf" 119 2736 2783 "otc_unit_test_insts.mf" 119 2736 2805
+type(
+  int list
+)
+"otc_unit_test_insts.mf" 119 2736 2769 "otc_unit_test_insts.mf" 119 2736 2806
+type(
+  int -> int list
+)
+"otc_unit_test_insts.mf" 119 2736 2753 "otc_unit_test_insts.mf" 119 2736 2806
+type(
+  (int, int list) Otc_insts_lib_rules.LibRules.Actions.restrict_action
+)
+"otc_unit_test_insts.mf" 116 2584 2592 "otc_unit_test_insts.mf" 119 2736 2807
+type(
+  int -> (int, int list) Otc_insts_lib_rules.LibRules.Actions.restrict_action
+)
+"otc_unit_test_insts.mf" 120 2808 2827 "otc_unit_test_insts.mf" 120 2808 2832
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 120 2808 2827 "otc_unit_test_insts.mf" 120 2808 2846
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 120 2808 2847 "otc_unit_test_insts.mf" 120 2808 2852
+type(
+  (t, int) Mlfi_type_path.field -> (t, int) Dynamic_gui.Fields.t
+)
+ident(
+  int_ref Dynamic_gui.Fields.value "dynamic_gui_signatures.mf" 59 2569 2571 "dynamic_gui_signatures.mf" 59 2569 2623
+)
+"otc_unit_test_insts.mf" 120 2808 2847 "otc_unit_test_insts.mf" 120 2808 2866
+call(
+  stack
+)
+type(
+  (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 120 2808 2826 "otc_unit_test_insts.mf" 120 2808 2867
+type(
+  (t, int) Dynamic_gui.Fields.t * (t, int) Dynamic_gui.Fields.t
+)
+"otc_unit_test_insts.mf" 121 2868 2884 "otc_unit_test_insts.mf" 121 2868 2886
+type(
+  int -> int
+)
+ident(
+  int_ref Sc_util.id "sc_util.mfi" 21 620 620 "sc_util.mfi" 21 620 637
+)
+"otc_unit_test_insts.mf" 121 2868 2876 "otc_unit_test_insts.mf" 121 2868 2887
+type(
+  (int, int) Otc_insts_lib_rules.LibRules.Actions.states
+)
+"otc_unit_test_insts.mf" 114 2550 2556 "otc_unit_test_insts.mf" 122 2888 2908
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 124 2916 2920 "otc_unit_test_insts.mf" 124 2916 2928
+type(
+  t Dynamic_gui.Rule.t list -> t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref Dynamic_gui.Rule.all "dynamic_gui_signatures.mf" 253 30954 30956 "dynamic_gui_signatures.mf" 253 30954 30989
+)
+"otc_unit_test_insts.mf" 125 2929 2937 "otc_unit_test_insts.mf" 125 2929 2947
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref combinator "otc_unit_test_insts.mf" 112 2503 2511 "otc_unit_test_insts.mf" 112 2503 2521
+)
+"otc_unit_test_insts.mf" 125 2929 2935 "otc_unit_test_insts.mf" 126 2949 2956
+type(
+  t Dynamic_gui.Rule.t list
+)
+"otc_unit_test_insts.mf" 124 2916 2920 "otc_unit_test_insts.mf" 126 2949 2956
+call(
+  stack
+)
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 112 2503 2507 "otc_unit_test_insts.mf" 126 2949 2956
+type(
+  t Dynamic_gui.Rule.t
+)
+"otc_unit_test_insts.mf" 128 2958 2964 "otc_unit_test_insts.mf" 128 2958 2966
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 128 2958 2969 "otc_unit_test_insts.mf" 128 2958 2982
+type(
+  name:string ->
+  t:t ttype ->
+  ?rules:t Dynamic_gui.Rule.t ->
+  ?type_rules:t Dynamic_gui.Type_rule.t list ->
+  ?scdmap:(Dynamic_gui.status -> t Dynamic_gui.ScdMap.MapSpec.row list) ->
+  ?layout:t Dynamic_gui.Layout.t ->
+  ?ipmap:t Dynamic_gui.ItemPointer.ip_map -> unit -> unit
+)
+ident(
+  int_ref Dynamic_gui.demo_register "dynamic_gui.mfi" 238 8683 8683 "dynamic_gui.mfi" 246 8967 8997
+)
+"otc_unit_test_insts.mf" 129 2983 2996 "otc_unit_test_insts.mf" 129 2983 3026
+type(
+  string
+)
+"otc_unit_test_insts.mf" 130 3027 3036 "otc_unit_test_insts.mf" 130 3027 3049
+type(
+  t ttype
+)
+type(
+  t -> t ttype
+)
+ident(
+  ext_ref Mlfi_types.internal_ttype_of
+)
+"otc_unit_test_insts.mf" 131 3050 3057 "otc_unit_test_insts.mf" 131 3050 3062
+type(
+  t Dynamic_gui.ItemPointer.ip_map
+)
+ident(
+  int_ref ipmap "otc_unit_test_insts.mf" 104 2311 2317 "otc_unit_test_insts.mf" 104 2311 2322
+)
+"otc_unit_test_insts.mf" 132 3063 3070 "otc_unit_test_insts.mf" 132 3063 3075
+type(
+  t Dynamic_gui.Rule.t
+)
+ident(
+  int_ref rules "otc_unit_test_insts.mf" 111 2489 2495 "otc_unit_test_insts.mf" 111 2489 2500
+)
+"otc_unit_test_insts.mf" 133 3076 3082 "otc_unit_test_insts.mf" 133 3076 3084
+type(
+  unit
+)
+"otc_unit_test_insts.mf" 128 2958 2969 "otc_unit_test_insts.mf" 133 3076 3084
+call(
+  stack
+)
+type(
+  unit
+)

@@ -1,0 +1,5 @@
+{
+	// return only a single result from type search
+	"mlfi_type_single_result": true,
+	"tabSize": 2
+}

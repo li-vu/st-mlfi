@@ -1,0 +1,138 @@
+%YAML1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - mf
+  - mfi
+scope: source.mlfi
+variables:
+  alnum: '[A-Za-z_0-9]'
+contexts:
+  main:
+    - match: '([~?])(\(*)([A-Za-z0-9_]+)'
+      captures: 
+        1: keyword.operator.mlfi
+        3: variable.parameter.mlfi
+
+    - match: '\b(Some|None)\b'
+      scope: support.function.mlfi
+
+    - match: '(`[A-Z][A-Za-z0-9_\'']*)'
+      scope: entity.name.function.mlfi
+
+    - match: '\b(?<=module)\s+([A-Z][A-Za-z0-9_'']+)\s*(?=[\(:=])'
+      captures:
+        1: entity.name.type.mlfi
+
+    - match: '\b([tpc][A-Z][A-Za-z0-9_'']*)\b(?=:)'
+      scope: support.class.mlfi
+
+    - match: '\b(assert|open|include)\b'
+      scope: storage.modifier.mlfi
+
+    - match: '\b(?<=val|method)\s+([A-Za-z0-9_]+)\s*:'
+      captures:
+        1: entity.name.function.mlfi
+
+    - match: '\b(?<=type)\s+(\(*''[A-Za-z0-9_,]+\)*\s*)*([A-Za-z0-9_]+)\b'
+      captures:
+        2: entity.name.type.mlfi
+
+    - match: '(?<=^|[=|])\s*([A-Z][A-Za-z0-9_]*)(?=\s*(of|:|\||$|\(\*))'
+      captures:
+        1: entity.name.function.mlfi
+
+    - match: '\b([A-Z][A-Za-z0-9_\'']*)\b'
+      scope: support.class.mlfi
+
+    - match: (let)\s*(open)(?=\b)
+      captures:
+        1: keyword.other.mlfi
+        2: storage.modifier.mlfi
+
+    - match: '\b(?<=(let|and))(\s+(rec))?\s+\(*([A-Z.a-z0-9_]+)\b'
+      push: function_defition
+      captures:
+        3: keyword.other.mlfi
+        4: entity.name.function.mlfi
+
+    - match: '\b(value_and_caption|const|value|composite|trigger|button_trigger|defer_trigger|final_trigger|non_trigger|init_trigger|clean_trigger|build_trigger|save_trigger|import_context|grid_append|grid_append_count|grid_columns|grid_idx_columns|enabled|readonly|protected|composite_readonly|composite_protected|tooltip|decimals|value_text|caption_text|column_enabled|column_readonly|column_decimals|column_caption_text|restrict|constructor|is_constructor|branch|interval|restrict_compare|negated|restrict_negated|subpath|none|seq_unit|seq_units|join_unit|fail|empty|update|update_m|validate|validate_m|init|init_m|default|subpath|subpath_fst|subpath_snd|extract|grid_add_init_m|grid_add_init|grid_add_init_multiple|grid|grid_ext|weak_update|weak_update_m|button_enabled|button|button_m|button_by_name|button_by_name_m|all|conditional|copy|same|equalize|virt_pack_cast|with_virtual_field|variant|variant_ext|on_save|copy_value|update_default_m|update_default|tuple[0-9]*)\b'
+      scope: entity.name.tag.mlfi
+
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+    - match: '"'
+      scope: punctuation.definition.string.begin.mlfi
+      push: double_quoted_string
+
+    # Comments begin with a '//' and finish at the end of the line
+    - match: '\(\*'
+      scope: punctuation.definition.comment.mlfi
+      push: block_comment
+
+    - match: '\b(a(nd|s)|c(onstraint|lass)|ex(ception|ternal)|fun(ct(ion|or))?|in(herit)?|let|m(ethod|utable|odule)|of|p(arser|rivate)|rec|type|v(al|irtual))\b'
+      scope: keyword.other.mlfi
+
+    - match: '\b(set|list|option)\b'
+      scope: keyword.other.mlfi
+
+    - match: '\b(int|string|ttype|unit|bool)\b'
+      scope: keyword.other.mlfi
+
+    # Keywords are if, else for and while.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+    - match: '\b(if|else|for|while|object|struct|sig|begin|end)\b'
+      scope: keyword.control.mlfi
+
+    - match: '\b(do(ne|wnto)?|else|for|i(f|gnore)|lazy|match|new|or|t(hen|o|ry)|w(h(en|ile)|ith))\b'
+      scope: keyword.control.mlfi
+
+    # Numbers
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.mlfi
+
+    - match: '\b<|>|<>|\+|-|\*|/|%|<=|>=|==|=|!=|&&|\|\||\^|>>|<<|&|\||::|:=|\|>|:|:-|@|!|\\|->|=>\b'
+      scope: keyword.operator.mlfi
+
+    - match: '\b(true|false)\b'
+      scope: constant.language.mlfi
+
+    - match: '\b(return(f|)|bind|lift_Cs|lift_cache_based_Cs|mapM|database_handle|cache|abort|liftM(f|))\b'
+      scope: support.function.mlfi
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.mlfi
+    - match: '\\.'
+      scope: constant.character.escape.mlfi
+    - match: '"'
+      scope: punctuation.definition.string.end.mlfi
+      pop: true
+
+  block_comment:
+    - meta_scope: comment.line.mlfi
+    - match: '\*\)'
+      pop: true
+
+  function_defition:
+    # - meta_scope: markup.bold.mlfi
+    - match: ',\s*([A-Za-z0-9_]+)\b'
+      captures:
+        1: entity.name.function.mlfi
+      
+    - match: \s
+      pop: true
+
+  # parameters:
+  #   - match: '\b=\b'
+  #     scope: keyword.operator.mlfi
+  #     pop: true
+  #   - match: \bin\b
+  #     scope: keyword.control.mlfi
+  #     pop: true
+  #   - include: main
+    
+    
+

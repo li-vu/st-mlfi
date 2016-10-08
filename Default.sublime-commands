@@ -1,0 +1,19 @@
+[{
+	    "caption": "Mlfi: Show type",
+	    "command": "mlfi_type"
+	},
+	{
+	    "caption": "Mlfi: Next type",
+	    "command": "mlfi_type_next_type"
+	},
+	{
+	    "caption": "Mlfi: Previous type",
+	    "command": "mlfi_type_next_type",
+	    "args": {"forward": false}
+	},
+	{
+	    "caption": "Mlfi: Open type",
+	    "command": "mlfi_type_next_type",
+	    "args": {"focus_code": true}
+	}
+]

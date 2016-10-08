@@ -1,0 +1,54 @@
+[
+	
+  	{
+	    "keys": ["ctrl+k","ctrl+j"],
+	    "command": "mlfi_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
+  	},
+  	{
+	    "keys": ["f5"],
+	    "command": "mlfi_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
+  	},
+  	{
+	    "keys": ["f2"],
+	    "command": "mlfi_type_next_type",
+	    "args": {"focus_code": true},
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
+  	},
+  	{
+	    "keys": ["shift+f2"],
+	    "args": {"forward": false, "focus_code": true},
+	    "command": "mlfi_type_next_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
+  	},
+  	{
+	    "keys": ["f2"],
+	    "command": "mlfi_type_next_type",
+	    "args": {"focus_code": true},
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfitype"}]
+  	},
+  	{
+	    "keys": ["shift+f2"],
+	    "args": {"forward": false, "focus_code": true},
+	    "command": "mlfi_type_next_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfitype"}]
+  	},
+  	{
+	    "keys": ["down"],
+	    "command": "mlfi_type_next_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfitype"}]
+  	},
+  	{
+	    "keys": ["up"],
+	    "args": {"forward": false},
+	    "command": "mlfi_type_next_type",
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfitype"}]
+  	},
+  	{
+	    "keys": ["enter"],
+	    "command": "mlfi_type_next_type",
+	    "args": {"focus_code": true},
+	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfitype"}]
+  	}
+]

@@ -1,0 +1,14 @@
+%YAML1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: mlfi-type
+hidden: True
+scope: source.mlfitype
+contexts:
+  main:
+    # - match: '^\d+:\d+ --> (?=.*)'
+      # scope: entity.name.function.omlfitype
+    - include: Packages/mlfi/mlfi.sublime-syntax
+    
+    
+

@@ -1,0 +1,35 @@
+%start file
+
+%%
+
+file
+: [(block)] {
+p[0] = ast.File(p[1] or [])
+}
+;
+
+block
+: position position [(annotation)] {
+p[0] = ast.Block(p[1], p[2], p[3] or [])    
+}
+;
+
+position
+: FILENAME NUMBER NUMBER NUMBER {
+p[0] = ast.Position(p[1],int(p[2]),int(p[4]) - int(p[3])) 
+}
+;
+
+annotation
+: TYPE VAL {
+p[0] = ast.Annotation(p[1], p[2])
+}
+| IDENT VAL {
+p[0] = ast.Annotation(p[1], p[2])
+}
+| CALL VAL {
+p[0] = ast.Annotation(p[1], p[2])
+}
+;
+
+%%

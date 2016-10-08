@@ -1,0 +1,21 @@
+// SYNTAX TEST "Packages/mlfi/mlfi.sublime-syntax"
+let observable_id_of_key key =
+//^ keyword.other.mlfi
+//  ^ entity.name.function.mlfi
+
+let security_rule ~secik_path ~sec_curik_path ~sec_excik_path ~currency_path ~exchange_path =
+//^ keyword.other.mlfi
+//  ^ entity.name.function.mlfi
+//                  ^ variable.parameter.mlfi
+
+type item_pointer_internal = int
+// ^ keyword.other.mlfi
+//   ^ entity.name.type.mlfi
+
+type 'i ip_map_item
+// ^ keyword.other.mlfi
+//      ^ entity.name.type.mlfi
+
+type ('a, 'b, 'c) kind = Field of 'a | Button | Grid of 'b | Variant of 'c
+// ^ keyword.other.mlfi
+//                ^ entity.name.type.mlfi

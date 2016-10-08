@@ -1,0 +1,59 @@
+%YAML1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - csml
+scope: source.csml
+contexts:
+  main:
+    - match: (?=.)
+      push: Packages/mlfi/mlfi.sublime-syntax
+      with_prototype:
+        - match: 'csfile ("[\w\d.]+")'
+          captures:
+            1 : string.quoted.double.csml
+          push: cs_lead 
+
+  cs_lead:
+    - match: '\[\*(?=.*[\};]\s*\*\])'
+      scope: keyword.operator.csml
+      push: Packages/C#/C#.sublime-syntax
+      with_prototype:
+        - match: '\*\]'
+          scope: keyword.operator.csml
+          pop: true
+
+    - match: '\[\*(?=.*[^;\}]\*\])'
+      scope: keyword.operator.csml
+      push: Packages/mlfi/mlfi.sublime-syntax
+      with_prototype:
+        - match: '\*\]'
+          scope: keyword.operator.csml
+          pop: true
+
+    - match: '\b(inline|prefix)\s*(\[\*)'
+      captures:
+        1: meta.keyword.using.source.cs
+        2: keyword.operator.csml
+
+      push: Packages/C#/C#.sublime-syntax
+      with_prototype:
+        - match: '\*\]'
+          scope: keyword.operator.csml
+          pop: true
+
+    - match: '\[\*'
+      scope: keyword.operator.csml
+      push: Packages/mlfi/mlfi.sublime-syntax
+      with_prototype:
+        - match: '\*\]'
+          scope: keyword.operator.csml
+          pop: true
+
+    - match: (?=.)
+      push: Packages/C#/C#.sublime-syntax
+      with_prototype:
+        - match: '(?=\[\*)'
+          pop: true
+        - match: '(?=(inline|prefix) \[\*)'
+          pop: true
