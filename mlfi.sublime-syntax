@@ -70,6 +70,10 @@ contexts:
       scope: punctuation.definition.comment.mlfi
       push: block_comment
 
+    # Record type
+    - match: '\{'
+      push: records
+      
     - match: '\b(a(nd|s)|c(onstraint|lass)|ex(ception|ternal)|fun(ct(ion|or))?|in(herit)?|let|m(ethod|utable|odule)|of|p(arser|rivate)|rec|type|v(al|irtual))\b'
       scope: keyword.other.mlfi
 
@@ -124,6 +128,14 @@ contexts:
       
     - match: \s
       pop: true
+
+  records:
+    - match: \}
+      pop: true
+    - match: '\s*([A-Za-z0-9_]+)\s*(?=:)'
+      captures:
+        1: entity.name.function.mlfi
+    - include: main
 
   # parameters:
   #   - match: '\b=\b'
