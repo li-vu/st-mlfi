@@ -1,0 +1,7 @@
+This package use the following libraries. Many thanks to their authors for their
+excellent contributions to the software community. For the latest version of
+their respective license, please refer to the respestive link listed in the
+following.
+- Python SortedContainers: https://pypi.python.org/pypi/sortedcontainers
+- Python intervaltree: https://pypi.python.org/pypi/intervaltree/
+- PLY (Python Lex-Yacc): http://www.dabeaz.com/ply/
