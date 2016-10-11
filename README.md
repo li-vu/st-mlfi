@@ -22,6 +22,8 @@ The package can be installed using one of the following methods:
 - Syntax highlight for both MLFi and [CSML](https://www.lexifi.com/csml) - a high-level language binding between OCaml and C#.
 - Detect type of an expression using the annotation.
 
+![type](type.png)
+
 # License
 Copyright (C) 2016 [li-vu](https://github.com/li-vu)
 
