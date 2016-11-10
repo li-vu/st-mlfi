@@ -97,7 +97,8 @@ class MlfiTypeCommand(sublime_plugin.TextCommand):
     def __interval_to_msg(self, itv):
       r = self.__interval_to_region(itv)
       expr = self.view.substr(r)
-      return "{0}\n{2}:{3} --> {1}".format(itv.data, expr, *self.view.rowcol(r.begin()))
+      row, col = self.view.rowcol(r.begin())
+      return "{0}\n{2}:{3} --> {1}".format(itv.data, expr, row + 1, col + 1)
 
     def __mk_msg(self, types):
       return "\n\n".join([self.__interval_to_msg(itv) for itv in types])
