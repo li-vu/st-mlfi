@@ -19,13 +19,18 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-from .interval import Interval
-from .node import Node
 from numbers import Number
 import collections
-from ..sortedcontainers import SortedDict
 from copy import copy
 from warnings import warn
+try:
+    from .interval import Interval
+    from .node import Node
+    from .sortedcontainers import SortedDict
+except SystemError:
+    from interval import Interval
+    from node import Node
+    from sortedcontainers import SortedDict
 
 try:
     xrange  # Python 2?

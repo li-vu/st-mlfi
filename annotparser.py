@@ -31,9 +31,9 @@ class AnnotParser(PLYParser):
     def __init__(
             self,
             lex_optimize=False,
-            lextab='pyannot.lextab',
+            lextab='annotlextab',
             yacc_optimize=False,
-            yacctab='pyannot.yacctab',
+            yacctab='annotyacctab',
             yacc_debug=False):
         """ Create a new pyAnnotparser.
 
