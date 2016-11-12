@@ -224,7 +224,7 @@ class MlfiTypeNextType(sublime_plugin.TextCommand):
       [self.__change_viewpoint(b, tr) for b in buffers]
 
       # change the view
-      cord = [int(match.group(v)) for v in ["row", "col"]] 
+      cord = [int(match.group(v)) - 1 for v in ["row", "col"]] 
       b = code_view.text_point(*cord)
       e = b + len(match.group('expr'))
       region = sublime.Region(b,e)
