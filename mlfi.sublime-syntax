@@ -34,7 +34,7 @@ contexts:
       captures:
         1: entity.name.function.mlfi
 
-    - match: '\b(?<=type)\s+(\(*''[A-Za-z0-9_,]+\)*\s*)*([A-Za-z0-9_]+)\b'
+    - match: '\b(?<=type|exception)\s+(\(*''[A-Za-z0-9_,]+\)*\s*)*([A-Za-z0-9_]+)\b'
       captures:
         2: entity.name.type.mlfi
 
