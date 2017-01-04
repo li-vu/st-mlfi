@@ -68,7 +68,7 @@ contexts:
       scope: punctuation.definition.string.begin.mlfi
       push: double_quoted_string
 
-    # Comments begin with a '//' and finish at the end of the line
+    # Comments begin with a '(*' and finish at '*)'
     - match: '\(\*'
       scope: punctuation.definition.comment.mlfi
       push: block_comment
@@ -122,6 +122,9 @@ contexts:
     - meta_scope: comment.line.mlfi
     - match: '\*\)'
       pop: true
+    - match: '\(\*'
+      scope: punctuation.definition.comment.mlfi
+      push: block_comment
 
   function_defition:
     # - meta_scope: markup.bold.mlfi
