@@ -17,7 +17,7 @@
 						[
 							{
 								"command": "open_file",
-								"args": {"file": "${packages}/mlfi/mlfi.sublime-settings"},
+								"args": {"file": "${packages}/MLFi/mlfi.sublime-settings"},
 								"caption": "Settings – Default"
 							},
 							{

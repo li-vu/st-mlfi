@@ -31,7 +31,7 @@ class MlfiTypeCommand(sublime_plugin.TextCommand):
       self.trees = {}
       self.output_view = None
       self.view_name = mlfitype_view_name
-      self.type_syntax_file = "Packages/mlfi/mlfi-type.sublime-syntax"
+      self.type_syntax_file = "Packages/MLFi/mlfi-type.sublime-syntax"
       self.panel_name = mlfitype_panel_name
       self.settings = sublime.load_settings('mlfi.sublime-settings')
       self.single_result = self.settings.get('mlfi_type_single_result', True)

@@ -8,7 +8,7 @@ contexts:
   main:
     # - match: '^\d+:\d+ --> (?=.*)'
       # scope: entity.name.function.omlfitype
-    - include: Packages/mlfi/mlfi.sublime-syntax
+    - include: Packages/MLFi/mlfi.sublime-syntax
     
     
 

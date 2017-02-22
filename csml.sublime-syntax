@@ -7,7 +7,7 @@ scope: source.csml
 contexts:
   main:
     - match: (?=.)
-      push: Packages/mlfi/mlfi.sublime-syntax
+      push: Packages/MLFi/mlfi.sublime-syntax
       with_prototype:
         - match: 'csfile ("[\w\d.]+")'
           captures:
@@ -25,7 +25,7 @@ contexts:
 
     - match: '\[\*(?=.*[^;\}]\*\])'
       scope: keyword.operator.csml
-      push: Packages/mlfi/mlfi.sublime-syntax
+      push: Packages/MLFi/mlfi.sublime-syntax
       with_prototype:
         - match: '\*\]'
           scope: keyword.operator.csml
@@ -44,7 +44,7 @@ contexts:
 
     - match: '\[\*'
       scope: keyword.operator.csml
-      push: Packages/mlfi/mlfi.sublime-syntax
+      push: Packages/MLFi/mlfi.sublime-syntax
       with_prototype:
         - match: '\*\]'
           scope: keyword.operator.csml

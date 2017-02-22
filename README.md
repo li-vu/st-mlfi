@@ -15,7 +15,7 @@ The package can be installed using one of the following methods:
 ## Manual
 
 1. `Sublime Menu > Preferences > Browse Packages ...`
-2. `git clone https://github.com/li-vu/st-mlfi mlfi`
+2. `git clone https://github.com/li-vu/st-mlfi MLFi`
 
 # Features
 
