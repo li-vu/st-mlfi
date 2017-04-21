@@ -68,6 +68,10 @@ contexts:
       scope: punctuation.definition.string.begin.mlfi
       push: double_quoted_string
 
+    - match: '\{([A-Za-z_]*)\|'
+      scope: punctuation.definition.string.begin.mlfi
+      push: heredoc
+
     # Comments begin with a '(*' and finish at '*)'
     - match: '\(\*'
       scope: punctuation.definition.comment.mlfi
@@ -115,6 +119,12 @@ contexts:
     - match: '\\.'
       scope: constant.character.escape.mlfi
     - match: '"'
+      scope: punctuation.definition.string.end.mlfi
+      pop: true
+
+  heredoc:
+    - meta_scope: string.unquoted.heredoc.mlfi
+    - match: \|\1\}
       scope: punctuation.definition.string.end.mlfi
       pop: true
 
