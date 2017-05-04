@@ -81,7 +81,7 @@ contexts:
     - match: '\{'
       push: records
       
-    - match: '\b(a(nd|s)|c(onstraint|lass)|ex(ception|ternal)|fun(ct(ion|or))?|in(herit)?|let|m(ethod|utable|odule)|of|p(arser|rivate)|rec|type|v(al|irtual))\b'
+    - match: '\b(a(nd|s)|c(onstraint|lass)|ex(ception|ternal)|fun(ct(ion|or))?|in(herit)?|let|m(ethod|utable|odule)|not|of|p(arser|rivate)|rec|type|v(al|irtual))\b'
       scope: keyword.other.mlfi
 
     - match: '\b(set|list|option)\b'
