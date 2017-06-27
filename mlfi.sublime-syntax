@@ -87,7 +87,7 @@ contexts:
     - match: '\b(set|list|option)\b'
       scope: keyword.other.mlfi
 
-    - match: '\b(int|string|ttype|unit|bool)\b'
+    - match: '\b(int|string|ttype|unit|bool|decimal|date)\b'
       scope: keyword.other.mlfi
 
     # Keywords are if, else for and while.
