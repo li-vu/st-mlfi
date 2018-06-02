@@ -1,10 +1,10 @@
 [
 	
-  	{
-	    "keys": ["f5"],
-	    "command": "mlfi_type",
-	    "context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
-  	},
+  	//{
+	    //"keys": ["f5"],
+	    //"command": "mlfi_type",
+	    //"context":  [{"key": "selector", "operator": "equal", "operand": "source.mlfi"}]
+  	//},
   	{
 	    "keys": ["f2"],
 	    "command": "mlfi_type_next_type",
